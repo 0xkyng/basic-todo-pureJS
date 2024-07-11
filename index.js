@@ -19,28 +19,12 @@ function renderTodoList() {
             const html= `
                 <div>${name}</div>
                 <div>${dueDate}</div>
-                <button class="delete-todo-button js -todo-delete-button">Delete</button>
+                <button class="delete-todo-button js-todo-delete-button">Delete</button>
                 `;
             // put the html on web page
             todoListHTML += html;
         })
 
-
-        // for (let i = 0; i < todoList.length; i++) {
-        //     const todoObject = todoList[i];
-        //     const {name, dueDate} = todoObject;
-        //     // create html code for ach array
-        //     const html= `
-        //         <div>${name}</div>
-        //         <div>${dueDate}</div>
-        //         <button onclick="
-        //             todoList.splice(${i}, 1);
-        //             renderTodoList();
-        //         " class="delete-todo-button">Delete</button>
-        //         `;
-        //     // put the html on web page
-        //     todoListHTML += html;
-        // }
 
         console.log(todoListHTML)
 
@@ -53,6 +37,8 @@ function renderTodoList() {
             })
         })
 }
+
+
 
 document.querySelector('.js-add-todo-button').addEventListener('click', () => {
     addTodo();
@@ -82,17 +68,3 @@ function addTodo() {
 
 
 
-// const nums = [1, 2, 3];
-//     let total = 0; 
-
-//     for (let i = 0; i < nums.length; i++) {
-//         const num = nums[i];
-//         total += num;
-//     }
-
-//     const numsDoubled = [];
-
-//     for (let i = 0; i < nums.length; i++) {
-//         const num = nums[i];
-//         numsDoubled.push( num * 2);
-//     }
