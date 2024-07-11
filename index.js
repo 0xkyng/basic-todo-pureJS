@@ -13,7 +13,7 @@ function renderTodoList() {
     // Loop through the array and 
     // Generate the html using javascript
     let todoListHTML = '';
-        todoList.forEach(function(todoObject, index) {
+        todoList.forEach((todoObject, index) => {
             const {name, dueDate} = todoObject;
             // create html code for ach array
             const html= `
@@ -50,7 +50,7 @@ function renderTodoList() {
         document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 }
 
-function addTodo() {
+function addTodo() { 
     // select input field
     const inputElement = document.querySelector('.js-name-input');
     // Get text from textbox
